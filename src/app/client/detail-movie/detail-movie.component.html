@@ -1,0 +1,32 @@
+<div class="loading container text-center mt-5" *ngIf="isLoading">
+  <div class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <br>
+  <span>Loading...</span>
+</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4">
+      <img [src]="detailMovie?.hinhAnh" />
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col-12">
+          <p>{{ detailMovie?.tenPhim }}</p>
+        </div>
+        <div class="col-12">
+          <p>{{ detailMovie?.moTa }}</p>
+        </div>
+        <div class="col-12">
+          <p>{{ detailMovie?.ngayKhoiChieu }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-12">
+          <p>Dữ liệu lấy từ params</p>
+          <p>Tên phim: {{nameMovie}}</p>
+          <p>Mã phim: {{idMovie}}</p>
+      </div> -->
+  </div>
+</div>

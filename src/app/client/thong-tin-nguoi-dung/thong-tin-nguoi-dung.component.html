@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <input
+    type="text"
+    class="form-control"
+    value=""
+    placeholder="ten tai khoan"
+    #thongTin
+  />
+  <br>
+  <button class="btn btn-success" color="primary" (click)="layThongTin(thongTin.value)">Lấy thông tin</button>
+
+  <div class="thong-tin mt-3" *ngFor="let acc of thongTinNguoiDung">
+    <app-user-detail [user]="acc"></app-user-detail>
+  </div>
+  <!-- <div class="thong-tin mt-3" >
+    <p>Ho ten: {{acc.hoTen}}</p>
+    <p>Tai khoan: {{acc.taiKhoan}}</p>
+    <p>Mat khau: {{acc.matKhau}}</p>
+    <p>Email: {{acc.email}}</p>
+    <p>So DT: {{acc.soDT}}</p>
+  </div> -->
+</div>

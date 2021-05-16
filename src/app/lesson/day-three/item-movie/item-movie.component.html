@@ -1,0 +1,9 @@
+<div class="card">
+    <img class="card-img-top" [src]="film.imgUrl" alt="" />
+    <div class="card-body">
+        <h4 class="card-title">{{film.name}}</h4>
+        <p class="card-text">{{film.detail}}</p>
+        <p class="card-text">Like: {{likeInListLike}}</p>
+        <!-- định nghĩa hàm like này trong item-movie.components.ts -->
+    <button class="btn btn-success" (click)="like()">Like</button>
+</div>

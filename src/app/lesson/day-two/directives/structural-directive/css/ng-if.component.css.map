@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../ng-if/ng-if.component.scss"
+    ],
+    "names": [],
+    "file": "ng-if.component.css"
+}

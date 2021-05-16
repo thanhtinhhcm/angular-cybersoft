@@ -1,0 +1,8 @@
+<p style="font-size: 14px; color: blue;">*ngFor</p>
+<ng-container *ngFor="let student of studentList; let stt = index">
+    <div *ngIf="student.age === '21'">
+        {{stt + 1}}. Ten: {{student.name}} - tuoi: {{student.age}}
+    </div>
+</ng-container>
+
+<!-- ng-container dùng trong ngFor để tự động render ra những thẻ div cần thiết -->

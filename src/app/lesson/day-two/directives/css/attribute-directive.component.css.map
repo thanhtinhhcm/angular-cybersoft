@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../attribute-directive/attribute-directive.component.scss"
+    ],
+    "names": [],
+    "file": "attribute-directive.component.css"
+}

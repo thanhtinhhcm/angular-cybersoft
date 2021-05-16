@@ -1,0 +1,6 @@
+Module pipe được tạo ra dùng để custom dữ liệu hiển thị ra màn hình theo ý của người lập trình.
+Như ở module pipe này, chúng ta tạo ra pipe có tên shortCut chức năng chính của nó dùng để cắt đi chuỗi string có nhiều hơn 50 ký tự sau đó cộng thêm dấu "..." vào. Lệnh tạo ng g p "name"
+
+* Đầu tiên phải export ShortCutPipe để có thể sử dụng ở các component khác.
+** Tiếp theo phải import module pipe này vào component gốc để sử dụng.
+*** Sau đó ở thẻ html cần custom ta sử dụng như sau: {{movie?.moTa | shortCut}}

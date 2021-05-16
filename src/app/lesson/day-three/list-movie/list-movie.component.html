@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let movie of listMovie">
+          <!-- truyền biến movie này xuống item-movie -->
+          <!-- dùng eventBinding invokeActionChild để bắt đc sự kiện click từ nút button -->
+        <app-item-movie [film] = "movie" [listLike]="listLikeMovie" (eventOutput)="invokeActionChild($event)"></app-item-movie>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Danh sach like</h3>
+            <p *ngFor="let itemLikeMovie of listLikeMovie">
+                {{itemLikeMovie.name}} - {{itemLikeMovie.totalLike}}
+            </p>
+        </div>
+    </div>
+    <button class="btn btn-danger" (click)="demoViewChildren()">Demo ViewChildren</button>
+</div>

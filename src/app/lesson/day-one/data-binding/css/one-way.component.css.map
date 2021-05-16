@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../one-way/one-way.component.scss"
+    ],
+    "names": [],
+    "file": "one-way.component.css"
+}

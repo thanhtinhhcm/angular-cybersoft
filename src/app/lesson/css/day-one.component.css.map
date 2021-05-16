@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../day-one/day-one.component.scss"
+    ],
+    "names": [],
+    "file": "day-one.component.css"
+}

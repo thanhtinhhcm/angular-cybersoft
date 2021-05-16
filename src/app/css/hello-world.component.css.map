@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../hello-world/hello-world.component.scss"
+    ],
+    "names": [],
+    "file": "hello-world.component.css"
+}

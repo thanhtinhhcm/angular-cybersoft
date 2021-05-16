@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../list-rap/list-rap.component.scss"
+    ],
+    "names": [],
+    "file": "list-rap.component.css"
+}

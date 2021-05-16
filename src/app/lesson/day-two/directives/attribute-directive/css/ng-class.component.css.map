@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAA;EACD,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,MAAM;CAChB",
+    "sources": [
+        "../ng-class/ng-class.component.scss"
+    ],
+    "names": [],
+    "file": "ng-class.component.css"
+}

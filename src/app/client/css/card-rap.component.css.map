@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../card-rap/card-rap.component.scss"
+    ],
+    "names": [],
+    "file": "card-rap.component.css"
+}

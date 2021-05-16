@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <form
+    class="example-form w-100"
+    [formGroup]="loginForm"
+    (ngSubmit)="login(loginForm)"
+  >
+    <mat-form-field class="example-full-width">
+      <mat-label>Account</mat-label>
+      <input
+        matInput
+        placeholder="Account"
+        value=""
+        formControlName="account"
+      />
+      <mat-error *ngIf="account?.touched && account?.errors">
+        <span *ngIf="account?.errors?.required">Tài khoản không được rỗng !</span>
+        <span *ngIf="account?.errors?.minlength">Tài khoản phải có ít nhất <strong>6 ký tự</strong></span>
+      </mat-error>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        placeholder="Password"
+        value=""
+        formControlName="password"
+      />
+      <mat-error *ngIf="password?.touched && password?.errors">
+        <span *ngIf="password?.errors?.required">Mật khẩu không được rỗng !</span>
+        <span *ngIf="password?.errors?.minlength">Mật khẩu phải có ít nhất <strong>6 ký tự</strong></span>
+      </mat-error>
+    </mat-form-field>
+    <button [disabled]="loginForm.invalid" type="submit" mat-raised-button color="primary">Login</button>
+    <!-- [disabled]="loginForm.status === 'INVALID'" -->
+  </form>
+</div>

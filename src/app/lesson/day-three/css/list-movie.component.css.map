@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../list-movie/list-movie.component.scss"
+    ],
+    "names": [],
+    "file": "list-movie.component.css"
+}

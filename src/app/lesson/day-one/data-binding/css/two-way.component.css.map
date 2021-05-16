@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../two-way/two-way.component.scss"
+    ],
+    "names": [],
+    "file": "two-way.component.css"
+}
