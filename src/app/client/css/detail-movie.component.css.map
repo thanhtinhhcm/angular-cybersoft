@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../detail-movie/detail-movie.component.scss"
+    ],
+    "names": [],
+    "file": "detail-movie.component.css"
+}

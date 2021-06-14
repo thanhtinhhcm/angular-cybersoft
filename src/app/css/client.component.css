@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=client.component.css.map */
+.modal-dialog {
+  max-width: 700px;
+}
+
+.modal-dialog .modal-content {
+  border: none;
+}
+
+.modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+
+.modal-dialog .modal-content .close {
+  opacity: 0.8;
+  position: absolute;
+  right: 0%;
+}
+
+.modal-dialog .modal-content .close span {
+  color: white;
+  width: 30px;
+  height: 30px;
+  border: 3px solid red;
+  background-color: red;
+  border-radius: 50%;
+  display: block;
+  transform: translate(13px, -10px);
+}
+/*# sourceMappingURL=client.component.css.map */

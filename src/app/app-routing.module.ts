@@ -7,6 +7,7 @@ import { DayThreeComponent } from './lesson/day-three/day-three.component';
 import { DayTwoComponent } from './lesson/day-two/day-two.component';
 import { LessonComponent } from './lesson/lesson.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DeActiveGuard } from './provider/guards/de-active.guard';
 import { LoginComponent } from './provider/login/login.component';
 import { ProviderModule } from './provider/provider.module';
 import { SignupComponent } from './provider/signup/signup.component';
@@ -40,10 +41,12 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+
   },
   {
     path: 'signup',
-    component: SignupComponent
+    component: SignupComponent,
+    canDeactivate: [DeActiveGuard]
   },
   // link to page not found component
   {

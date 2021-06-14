@@ -4,6 +4,7 @@ import { AdminComponent } from './admin/admin.component';
 import { DashBoardComponent } from './admin/dash-board/dash-board.component';
 import { RouterModule } from '@angular/router';
 import { ListNguoiDungComponent } from './admin/list-nguoi-dung/list-nguoi-dung.component';
+import { AuthGuard } from '../provider/guards/auth.guard';
 // import { MatHeaderRowDef, MatRowDef, MatTableModule} from '@angular/material/table';
 
 
@@ -14,7 +15,8 @@ const routes = [
     children: [
       {
         path: 'dashboard',
-        component: DashBoardComponent
+        component: DashBoardComponent,
+        canActivate: [AuthGuard]
       },
       {
         path: 'ds-nguoi-dung',

@@ -21,6 +21,7 @@ import { DayThreeComponent } from './day-three/day-three.component';
 import { ListMovieComponent } from './day-three/list-movie/list-movie.component';
 import { ItemMovieComponent } from './day-three/item-movie/item-movie.component';
 import { DayFourComponent } from './day-four/day-four.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 
 
@@ -44,7 +45,8 @@ import { DayFourComponent } from './day-four/day-four.component';
     DayThreeComponent,
     ListMovieComponent,
     ItemMovieComponent,
-    DayFourComponent
+    DayFourComponent,
+    PipeComponent
   ],
   imports: [
     CommonModule,

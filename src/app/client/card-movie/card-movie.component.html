@@ -1,9 +1,12 @@
-<div class="card mb-5" (click)="navigateTo()">
+<div class="card mb-5">
   <img class="card-img-top" src="{{ movie?.hinhAnh }}" height="200px" alt="" />
-  <div class="card-body">
+  <div class="card-body" (click)="navigateTo()">
     <h2>{{ movie?.tenPhim }}</h2>
     <p class="card-text">{{ movie?.moTa | shortCut }}</p>
   </div>
+  <!-- <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button> -->
   <a
     class="btn btn-primary mt-3"
     routerLink="/client/detail-movie"
@@ -11,4 +14,6 @@
   >
     Chi tiết phim
   </a>
+  <button class="btn btn-primary" data-toggle="modal" data-target="#modalId" (click)="callDialog()">Demo behavior subject</button>
 </div>
+

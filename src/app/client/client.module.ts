@@ -12,6 +12,10 @@ import { PipeModule } from '../pipe/pipe.module';
 import { ThongTinNguoiDungComponent } from './thong-tin-nguoi-dung/thong-tin-nguoi-dung.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { DetailMovieComponent } from './detail-movie/detail-movie.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { LightboxModule } from 'ngx-lightbox';
+
+
 
 const routes = [
   {
@@ -61,7 +65,10 @@ const routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    PipeModule
+    PipeModule,
+    LightboxModule,
+    MatDialogModule,
+
   ], exports: [ClientComponent]
 })
 export class ClientModule { }

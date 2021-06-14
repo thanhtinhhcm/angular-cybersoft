@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../thong-tin-nguoi-dung/thong-tin-nguoi-dung.component.scss"
+    ],
+    "names": [],
+    "file": "thong-tin-nguoi-dung.component.css"
+}

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieService } from '@Client-service/movie.service';
 import { Observable } from 'rxjs';
-import { MovieService } from '../services/movie.service';
 
 @Component({
   selector: 'app-list-film',
@@ -15,6 +15,7 @@ export class ListFilmComponent implements OnInit {
   ngOnInit(): void {
     this.movieServices.getDataMovies().subscribe((res) => {
       this.listFilm = res;
+      console.log(res)
     })
   }
 

@@ -11,7 +11,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavbarComponent } from './Layouts/navbar/navbar.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { LightboxModule } from 'ngx-lightbox';
+import { JwtInterceptor } from './provider/guards/jwt.interceptor';
+import { ShareModule } from './share/share.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     DemoComponentComponent,
     HelloWorldComponent,
     PageNotFoundComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,9 +31,15 @@ import { HttpClientModule } from '@angular/common/http';
     ClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    LightboxModule,
+    ShareModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: JwtInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

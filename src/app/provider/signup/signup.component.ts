@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { SignupService } from '../services/signup.service';
 
 @Component({
@@ -6,12 +6,23 @@ import { SignupService } from '../services/signup.service';
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.scss']
 })
-export class SignupComponent implements OnInit {
+export class SignupComponent implements OnInit, AfterViewInit, OnDestroy {
+
+  @ViewChild('registerForm') registerFormTag: any;
 
   regexEmail = "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
   constructor(private signupService: SignupService) { }
 
   ngOnInit(): void {
+    console.log(this.registerFormTag)
+  }
+
+  ngAfterViewInit(): void {
+    console.log(this.registerFormTag)
+  }
+
+  ngOnDestroy(): void{
+
   }
 
   // signup(username: string, password: string, email: string, soDT: string, hoTen: string){
@@ -48,6 +59,10 @@ export class SignupComponent implements OnInit {
         alert('Signup successfully!!!')
       }
     })
+  }
+
+  isSubmittedForm(): boolean {
+    return this.registerFormTag.submitted
   }
 
 }

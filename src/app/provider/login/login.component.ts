@@ -44,8 +44,9 @@ export class LoginComponent implements OnInit {
     // const objLogin = {...form.value}
     this.accountService.login(objLogin).subscribe((res) => {
       if (res) {
-        console.log(res);
+        localStorage.setItem('accountFE62', JSON.stringify(res));
         alert('Login successfully!')
+
       }
     })
 

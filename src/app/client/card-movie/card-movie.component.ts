@@ -1,5 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
+import { MovieService } from '../services/movie.service';
+
 
 @Component({
   selector: 'app-card-movie',
@@ -9,13 +11,18 @@ import { Router } from '@angular/router';
 export class CardMovieComponent implements OnInit {
 
   @Input() movie: any;
-  constructor(private router: Router) { }
+
+  constructor(private router: Router, private movieService: MovieService) { }
 
   ngOnInit(): void {
   }
 
   navigateTo(){
     this.router.navigate(['/client/detail-movie', this.movie.maPhim])
+  }
+
+  callDialog(){
+    this.movieService.changeMovieDataModal(this.movie);
   }
 
 }

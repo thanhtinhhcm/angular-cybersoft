@@ -12,7 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatButtonModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
   ],
   exports: [MatButtonModule, MatInputModule, MatProgressSpinnerModule, MatFormFieldModule]
 })
